@@ -33,7 +33,7 @@ router.get("/api/transaction", (req, res) => {
 });
 
 router.get("/"), (req, res) => {
-  res.json(path.join(__dirname, "public/index.html"));
+  res.redirect("../public/index.html");
 }
 
 module.exports = router;
